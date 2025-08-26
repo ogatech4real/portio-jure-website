@@ -1,0 +1,23 @@
+{
+  "name": "Portio Jure Legal Partners",
+  "short_name": "Portio Jure",
+  "description": "Premier law firm in Cameroon offering comprehensive legal services",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A2342",
+  "theme_color": "#C7A008",
+  "icons": [
+    {
+      "src": "/Micarelawv.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/Micarelawv.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
