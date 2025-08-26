@@ -204,7 +204,10 @@ export default function Home() {
       <div className="min-h-screen">
       {/* Hero Section */}
       <section className="hero-section relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Video with Error Handling */}
+        {/* Fallback background - behind everything */}
+        <div className="absolute inset-0 bg-navy-primary bg-[url('https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop')] bg-cover bg-center z-0"></div>
+        
+        {/* Background Video with Error Handling - on top of fallback */}
         <video
           autoPlay
           loop
@@ -227,14 +230,11 @@ export default function Home() {
           <source src="/MiraHeroVideo.mp4" type="video/mp4" />
         </video>
         
-        {/* Fallback background */}
-        <div className="absolute inset-0 bg-navy-primary bg-[url('https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop')] bg-cover bg-center"></div>
-        
         {/* Dark Navy Overlay Gradient for Readability */}
-        <div className="absolute inset-0 bg-gradient-to-br from-navy-primary/80 via-navy-primary/60 to-navy-primary/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-navy-primary/80 via-navy-primary/60 to-navy-primary/80 z-10"></div>
         
         {/* Additional overlay for text readability */}
-        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="absolute inset-0 bg-black/30 z-20"></div>
         
         {/* Hero Content */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
