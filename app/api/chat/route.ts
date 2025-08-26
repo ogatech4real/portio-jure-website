@@ -1,6 +1,8 @@
 import { OpenAI } from 'openai';
 import { NextRequest, NextResponse } from 'next/server';
 
+export const dynamic = 'force-dynamic';
+
 // Initialize OpenAI client only if API key is available
 let openai: OpenAI | null = null;
 
